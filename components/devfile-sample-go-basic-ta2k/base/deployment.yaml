@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-ta2k
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:dphilips-tenant-devfile-sample-go-basic-ta2k
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6ec980a47f3bc016b57afef9fb79b7763e6296170e8185e184a7ed9a3af18ffd
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
