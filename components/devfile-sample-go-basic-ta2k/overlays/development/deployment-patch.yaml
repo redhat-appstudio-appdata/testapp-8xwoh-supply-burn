@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-ta2k
+  namespace: dphilips-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6ec980a47f3bc016b57afef9fb79b7763e6296170e8185e184a7ed9a3af18ffd
+        name: container-image
+        resources: {}
+status: {}
